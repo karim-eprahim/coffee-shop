@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<main>
+    <div class="container mt-5">
+
+
+
+        {% block body %}
+        <p>Logged out!</p>
+        <a href="{% url 'login'%}">Click here to login again.</a>
+        {% endblock body %}
+
+
+
+        
+    </div>
+</main>
+        {% endblock body %}
